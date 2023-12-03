@@ -17,3 +17,7 @@ def handle_client(client_socket):
 
 
 def start_server():
+    # Configurar el servidor
+    host = '127.0.0.1'
+    port = 12345
+
