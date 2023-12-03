@@ -19,3 +19,5 @@ def start_client():
         print(f"Respuesta del servidor: {response.decode('utf-8')}")
      # Cerrar la conexión con el servidor
     client.close()
+if __name__ == "__main__":
+    start_client()
