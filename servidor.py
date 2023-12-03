@@ -15,3 +15,5 @@ def handle_client(client_socket):
     # Cerrar la conexión con el cliente
     client_socket.close()
 
+
+def start_server():
