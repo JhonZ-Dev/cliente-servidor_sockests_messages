@@ -29,4 +29,6 @@ def start_server():
         # Esperar a que un cliente se conecte
         client_socket, addr = server.accept()
         print(f"Cliente conectado desde {addr[0]}:{addr[1]}")
-
+# Iniciar un hilo para manejar al cliente
+        client_handler = threading.Thread(target=handle_client, args=(client_socket,))
+        client_handler.start()
