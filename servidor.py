@@ -32,3 +32,5 @@ def start_server():
 # Iniciar un hilo para manejar al cliente
         client_handler = threading.Thread(target=handle_client, args=(client_socket,))
         client_handler.start()
+if __name__ == "__main__":
+    start_server()
