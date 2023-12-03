@@ -23,4 +23,5 @@ def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
     server.listen(5)
+    print(f"Servidor escuchando en {host}:{port}")
 
