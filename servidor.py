@@ -12,3 +12,6 @@ def handle_client(client_socket):
         # Responder al cliente
         response = "Mensaje recibido correctamente"
         client_socket.send(response.encode('utf-8'))
+    # Cerrar la conexión con el cliente
+    client_socket.close()
+
